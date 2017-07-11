@@ -99,5 +99,10 @@ h3.projects {
 
 h5.projects-link {
 	font-size : 125%;
-	text-shadow : 0px 1px 0px #E7DFDD, 0px -1px 0px #E7DFDD, 1px 0px 0px #E7DFDD, 0px 1px 0px #E7DFDD, -1px -1px 5px #000000;
+	text-shadow : 0px 1px 0px #E7DFDD, 0px -1px 0px #E7DFDD, 1px 0px 0px #E7DFDD, -1px 0px 0px #E7DFDD, -1px -1px 5px #000000;
+}
+
+h5.github-link {
+	font-size : 125%;
+	text-shadow : 0px 1px 0px #E7DFDD, 0px -1px 0px #E7DFDD, 1px 0px 0px #E7DFDD, -1px 0px 0px #E7DFDD, -1px -1px 5px #000000;
 }
