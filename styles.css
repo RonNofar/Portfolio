@@ -4,6 +4,15 @@ canvas {
 	left : 0;
 }
 
+img {
+	transition-property : transform;
+	transition-duration : 0.5s;
+}
+
+img:hover {
+	transform : scale(1.25);
+}
+
 div.overlay {
 	height : 0px;
 	overflow : visible;
@@ -47,6 +56,8 @@ ul.header {
 
 .header a {
 	text-decoration : none;
+	transition-property : color;
+	transition-duration : 0.2s;
 }
 
 li.header {
@@ -58,18 +69,31 @@ li.header {
 	background-color : #E7DFDD;
 	text-shadow : 1px 1px 5px #4717F6;
 	text-decoration : none;
+	transition : background-color 0.2s, padding-right 0.2s, padding-left 0.2s, font-size 0.2s, text-shadow 0.2s;
 }
 
-li.selected {
-	float : left;
+#selected a {
+	color : #E7DFDD;
+}
+
+li#selected {
 	padding-right : 2.75em;
 	padding-left : 2.75em;
-	margin-bottom : 2em;
-	border : 2px solid #0E0B16;
-	background-color : #E7DFDD;
 	font-size : 125%;
 	text-shadow : 1px 0px 0px #000000/*, -1px 0px 0px #000000*/;
-	text-decoration : none;
+	background-color : #A239CA;
+	transition : ;
+}
+
+li.header:hover, li.header:focus, li.header:active {
+	background-color : #A239CA;
+	padding-right : 2.75em;
+	padding-left : 2.75em;
+	font-size : 125%;
+	text-shadow : 1px 0px 0px #000000;
+}
+.header a:hover, .header a:focus, .header a:active {
+	color : #E7DFDD;
 }
 
 nav.header {
@@ -79,7 +103,7 @@ nav.header {
 
 body { 
 	/*background-color : #0E0B16;*/
-	background-image : url("images/background_tile.jpg");
+	background-image : url("http://cdn.mysitemyway.com/etc-mysitemyway/webtreats/assets/posts/976/full/tileable-light-blurs-and-abstract-circles-18.png");
 	background-color : transparent;
 	background-attachment : local;
 	
@@ -97,6 +121,12 @@ section {
 	background-attachment: fixed; /*look more into*/
 	margin : 2em;
 	margin-right : 4em;
+	transition-property : transform;
+	transition-duration : 0.5s;
+}
+
+section:hover {
+	transform : scale(1.1);
 }
 
 p.about_me {
@@ -128,12 +158,20 @@ h3.projects {
 	padding-right : 1.5em;
 }
 
-h5.projects-link {
+h5.link {
 	font-size : 125%;
-	text-shadow : 0px 1px 0px #E7DFDD, 0px -1px 0px #E7DFDD, 1px 0px 0px #E7DFDD, -1px 0px 0px #E7DFDD, -1px -1px 5px #000000;
+	transition : text-shadow 0.2s;
 }
 
-h5.github-link {
-	font-size : 125%;
+footer.link {
+	margin : 1em;
+	transition : font-size 0.1s;
+}
+/*
+footer:hover {
+	font-size : 150%;
+}*/
+
+h5.link:hover {
 	text-shadow : 0px 1px 0px #E7DFDD, 0px -1px 0px #E7DFDD, 1px 0px 0px #E7DFDD, -1px 0px 0px #E7DFDD, -1px -1px 5px #000000;
 }
