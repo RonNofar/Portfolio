@@ -1,133 +1,153 @@
 <!DOCTYPE html>
-	<html>
-		<head>
-			<meta charset = "uft-8">
-			<link rel="stylesheet" type="text/css" href="styles.css">
-			<script src="js/lib/three.js"></script>
-			<script src="js/lib/RequestAnimationFrame.js"></script>
-			<title>Ron Nofar's Portfolio</title>
-		</head>
-		<body><!--
-		<div id="overlay" class="overlay">
-			<script src="js/test.js"></script>
-		</div>-->
-			<article class="header">
-				<header>
-					<h1 class="header" contenteditable="true">
-					<img class="header"
-						src="https://root.cern.ch/img/logos/ROOT_Logo/misc/generic-logo-white-512.png"
-						width = "50" height = "50">
-					Welcome!</h1>
-					<div class="header">
-						<h2 class="header">To Ron Nofar's Portfolio</h2>
-						<nav class="header">
-							<ul class="header">
-								<li class="header" id="selected"><a href="home.html" class="header"><b>Home</b></a></li>
-								<li class="header"><a href="projects.html" class="header">Projects</a></li>
-								<li class="header"><a href="resume.html" class="header">Resume</a></li>
-							</ul>
-						</nav>
-					</div>
-				</header>
-			</article>
-			<hr>
-			<article>
-				<header>
-					<hgroup>
-						<h3>My Recent Projects</h3>
-					</hgroup>
-				</header>
-				<section class="project" id = "project1">
-					<h4>Project Name</h4>
-					<blockquote>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum a ullamcorper purus. Quisque in quam et felis dapibus iaculis. Pellentesque accumsan sed mauris non fermentum. Nam fringilla imperdiet ipsum, eget accumsan nibh accumsan id. Mauris auctor dignissim justo, a tincidunt ante. Nulla hendrerit nisl at eleifend vulputate. Nullam leo augue.</p>
-						<img 
-							src="http://legacyphotographie.com/wp-content/themes/pashmina/images/blank.png"
-							width="300" height="200">
-					</blockquote>
-				</section>
-				<section class="project" id = "project2">
-					<h4>Project Name</h4>
-					<blockquote>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum a ullamcorper purus. Quisque in quam et felis dapibus iaculis. Pellentesque accumsan sed mauris non fermentum. Nam fringilla imperdiet ipsum, eget accumsan nibh accumsan id. Mauris auctor dignissim justo, a tincidunt ante. Nulla hendrerit nisl at eleifend vulputate. Nullam leo augue.</p>
-						<img 
-							src="http://legacyphotographie.com/wp-content/themes/pashmina/images/blank.png"
-							width="300" height="200">
-					</blockquote>
-				</section>
-				<section class="project" id = "project3">
-					<h4>Project Name</h4>
-					<blockquote>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum a ullamcorper purus. Quisque in quam et felis dapibus iaculis. Pellentesque accumsan sed mauris non fermentum. Nam fringilla imperdiet ipsum, eget accumsan nibh accumsan id. Mauris auctor dignissim justo, a tincidunt ante. Nulla hendrerit nisl at eleifend vulputate. Nullam leo augue.</p>
-						<img 
-							src="http://legacyphotographie.com/wp-content/themes/pashmina/images/blank.png"
-							width="300" height="200">
-					</blockquote>
-				</section>
-				<footer>
-					<h5 class="link" id="projects-link"><a href="projects.html"><b>Click here to see all projects</b></a></h5>
-				</footer>
-			</article>
-			<hr>
-			<article>
-				<header>
-					<hgroup>
-						<h3>My Skills</h3> 
-					</hgroup>
-				</header>
-				<section id = "skill1">
-					<h4>Skill</h4>
-					<blockquote>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum a ullamcorper purus. Quisque in quam et felis dapibus iaculis. Pellentesque accumsan sed mauris non fermentum. Nam fringilla imperdiet ipsum, eget accumsan nibh accumsan id. Mauris auctor dignissim justo, a tincidunt ante. Nulla hendrerit nisl at eleifend vulputate. Nullam leo augue.</p>
-					</blockquote>
-				</section>
-				<section id = "skill2">
-					<h4>Skill</h4>
-					<blockquote>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum a ullamcorper purus. Quisque in quam et felis dapibus iaculis. Pellentesque accumsan sed mauris non fermentum. Nam fringilla imperdiet ipsum, eget accumsan nibh accumsan id. Mauris auctor dignissim justo, a tincidunt ante. Nulla hendrerit nisl at eleifend vulputate. Nullam leo augue.</p>
-					</blockquote>
-				</section>
-				<section id = "skill3">
-					<h4>Skill</h4>
-					<blockquote>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum a ullamcorper purus. Quisque in quam et felis dapibus iaculis. Pellentesque accumsan sed mauris non fermentum. Nam fringilla imperdiet ipsum, eget accumsan nibh accumsan id. Mauris auctor dignissim justo, a tincidunt ante. Nulla hendrerit nisl at eleifend vulputate. Nullam leo augue.</p>
-					</blockquote>
-				</section>
-				<section id = "skill4">
-					<h4>Skill</h4>
-					<blockquote>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum a ullamcorper purus. Quisque in quam et felis dapibus iaculis. Pellentesque accumsan sed mauris non fermentum. Nam fringilla imperdiet ipsum, eget accumsan nibh accumsan id. Mauris auctor dignissim justo, a tincidunt ante. Nulla hendrerit nisl at eleifend vulputate. Nullam leo augue.</p>
-					</blockquote>
-				</section>
-				<section id = "skill5">
-					<h4>Skill</h4>
-					<blockquote>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum a ullamcorper purus. Quisque in quam et felis dapibus iaculis. Pellentesque accumsan sed mauris non fermentum. Nam fringilla imperdiet ipsum, eget accumsan nibh accumsan id. Mauris auctor dignissim justo, a tincidunt ante. Nulla hendrerit nisl at eleifend vulputate. Nullam leo augue.</p>
-					</blockquote>
-				</section>
+<html>
+
+<head>
+	<meta charset = "uft-8">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<script src="js/lib/three.js"></script>
+	<script src="js/lib/RequestAnimationFrame.js"></script>
+	<title>Ron Nofar's Portfolio</title>
+</head>
+
+<body><!--
+<div id="overlay" class="overlay">
+	<script src="js/test.js"></script>
+</div>-->
+
+	<!-- PAGE HEADER -->
+	<article class="header">
+		<header>
+			<h1 contenteditable="true">
+			<img src="https://root.cern.ch/img/logos/ROOT_Logo/misc/generic-logo-white-512.png"
+				width = "50" height = "50"> Welcome!</h1>
 			
-			</article>
-			<hr>
-			<article>
-				<header>
-					<hgroup>
-						<h3>About Me</h3>
-					</hgroup>
-				</header>
-				<section>
-					<p class="about_me">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultricies neque nulla, semper aliquet ex consequat eget. Donec faucibus bibendum urna, posuere vulputate eros lacinia id. Pellentesque fermentum facilisis neque ac mattis. In semper nulla et sapien viverra tempus. Quisque gravida sapien vitae quam iaculis tincidunt. Nullam fringilla vehicula fringilla. Phasellus in eros placerat, interdum ante id, convallis lectus. Maecenas ultricies dictum erat in scelerisque. Nam eget ante vitae ante facilisis aliquam. Donec sollicitudin libero nec augue sodales, eget volutpat ipsum luctus. Phasellus ac auctor arcu. Aenean tincidunt enim in consectetur tempor. Donec sapien libero, porta ac ligula fringilla, rhoncus suscipit dolor.</p>
-				</section>
-			</article>
-			<hr>
-			<article> <!--footer-->
-				<section id = page_footer>
-					<hgroup class="foot">
-						<h2 class="foot">Ron Nofar<h2>
-						<h3 class="foot">1 (818) 836-9647</h3>
-						<h3 class="foot">ronnofar2@gmail.com</h3>
-					</hgroup>
-				</section>
-			</article>
-		</body>
-		
-	</html>
+			<div>
+			<h2>To Ron Nofar's Portfolio</h2>
+			<nav>
+				<ul>
+					<li id="selected">
+						<a href="home.html"><b>Home</b></a></li>
+					<li><a href="projects.html">Projects</a></li>
+					<li><a href="resume.html">Resume</a></li>
+				</ul>
+			</nav>
+			</div>
+		</header>
+	</article>
+	<hr>
+	
+	<!-- RECENT PROJECTS -->
+	<article class="project">
+		<header>
+			<hgroup>
+				<h3>My Recent Projects</h3>
+			</hgroup>
+		</header>
+		<section class="project" id = "project1">
+			<div>
+				<h4>Drive</h4>
+				<h5>An AC Transit Game in Unity C#</h5>
+			</div>
+			<blockquote>
+				<p>This project is a mobile game being made in Unity for a client, AC Transit. The project was started by Cogswell and offered as a class called Game Studio. We worked in a team of about 20 split into multiple departments each with a lead. This furthered my experience with working in a big multi-department team and furthered my skills with handling git repositories. The game itself is an endless runner in which the player is a bus avoiding traffic and picking up/dropping off color coded passengers at their corresponding bus stop. The game is coded using C# and is source controlled using a git GUI called SourceTree. This game is expected to be released by the end of Summer 2017.</p>
+				<img 
+					src="http://legacyphotographie.com/wp-content/themes/pashmina/images/blank.png"
+					width="300" height="200">
+			</blockquote>
+		</section>
+		<section class="project" id = "project2">
+			<div>
+				<h4 id="project_name">Drive</h4>
+				<h5>An AC Transit Game in Unity C#</h5>
+			</div>
+			<blockquote>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum a ullamcorper purus. Quisque in quam et felis dapibus iaculis. Pellentesque accumsan sed mauris non fermentum. Nam fringilla imperdiet ipsum, eget accumsan nibh accumsan id. Mauris auctor dignissim justo, a tincidunt ante. Nulla hendrerit nisl at eleifend vulputate. Nullam leo augue.</p>
+				<img 
+					src="http://legacyphotographie.com/wp-content/themes/pashmina/images/blank.png"
+					width="300" height="200">
+			</blockquote>
+		</section>
+		<section class="project" id = "project3">
+			<div>
+				<h4>Drive</h4>
+				<h5>An AC Transit Game in Unity C#</h5>
+			</div>
+			<blockquote>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum a ullamcorper purus. Quisque in quam et felis dapibus iaculis. Pellentesque accumsan sed mauris non fermentum. Nam fringilla imperdiet ipsum, eget accumsan nibh accumsan id. Mauris auctor dignissim justo, a tincidunt ante. Nulla hendrerit nisl at eleifend vulputate. Nullam leo augue.</p>
+				<img 
+					src="http://legacyphotographie.com/wp-content/themes/pashmina/images/blank.png"
+					width="300" height="200">
+			</blockquote>
+		</section>
+		<footer>
+			<h5 class="link" id="projects-link"><a href="projects.html"><b>Click here to see all projects</b></a></h5>
+		</footer>
+	</article>
+	<hr>
+	
+	<!-- SKILLS -->
+	<article>
+		<header>
+			<hgroup>
+				<h3>My Skills</h3> 
+			</hgroup>
+		</header>
+		<section id = "skill1">
+			<h4>Unity</h4>
+			<blockquote>
+				<p>I have been working in Unity since June of 2016 and so far it is my favorite and most used engine. Since I started learning Unity, I've worked on a dozen projects varying in scope and objective. These projects have been 3D, 2D, PC, mobile, and VR projects. I am always striving to learn more about this engine and unmask the potentials it has to offer. I would say I am most comfortable using this engine when making a game.</p>
+			</blockquote>
+		</section>
+		<section id = "skill2">
+			<h4>Unreal</h4>
+			<blockquote>
+				<p>I have been working in Unreal Engine 4 since September of 2016 to make various small projects and to prototype UI designs. I am currently still learning everything there is to know about this engine including both the scripting API and blueprinting. Although I am not the most comfortable using this engine, I am open to any learning opportunities that will further my knowledge of it.</p>
+			</blockquote>
+		</section>
+		<section id = "skill3">
+			<h4>GameMaker</h4>
+			<blockquote>
+				<p>I have been working in GameMaker Studio since October of 2015 and it was my first game engine. Although this engine is mainly used for 2D, I learned many concepts of game development that eventually carried over to my 3D projects. Using this engine is when I first dabbled in interactions between scripted objects, teaching the player, creating usable and efficient UI, and more. Although I no longer actively work in GameMaker, I am still comfortable with using it.</p>
+			</blockquote>
+		</section>
+		<section id = "skill4">
+			<h4>C#</h4>
+			<blockquote>
+				<p>I have been working in C# since I started learning Unity in June of 2016. Although originally I learned using an engine, since then I have worked with native and extended libraries outside of Unity. Besides Python, I would say that C# is the language that I am most familiar with.</p>
+			</blockquote>
+		</section>
+		<section id = "skill5">
+			<h4>C++</h4>
+			<blockquote>
+				<p>I have been working in C++ since August of 2016 and dove right in. I started using C++ in a class focusing on object oriented programming and software design. As a test of my skills and a final project, I decided to try and implement Dijkstra's shortest-path algorithm using a Min Heap for efficiency. You can see this project in the "Projects" tab and on my GitHub.</p>
+			</blockquote>
+		</section>
+	</article>
+	<hr>
+	
+	<!-- ABOUT ME -->
+	<article id="about_me">
+		<header>
+			<hgroup>
+				<h3>About Me</h3>
+			</hgroup>
+		</header>
+		<section>
+			<p>As you may know, my name is Ron Nofar and I am an aspiring Game Engineer and Designer. I started this journey of attempting to get into the game industry in September of 2015 when I transferred to Cogswell Polytechincal College in order to get my Bachelor of Science Degree in Game Design Engineering. Although the name may imply otherwise, my degree is more of a Software Engineering program with a minor in Game Design. Since the start of this journey I have expanded my knowledge in many subjects such as software design concepts, the use of data structures and algorithms, various coding languages and various programs as well as game design concepts, the production pipeline, project management, effectively working as a team, knowing when to make compromises and various game engines.</p>
+		</section>
+	</article>
+	<hr>
+	
+	<!-- FOOTER -->
+	<article class="foot"> 
+		<section>
+			<hgroup>
+				<h2>Ron Nofar<h2>
+				<h3>1 (818) 836-9647</h3>
+				<h3>ronnofar2@gmail.com</h3>
+			</hgroup>
+		</section>
+	</article>
+</body>
+	
+</html>

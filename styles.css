@@ -1,10 +1,40 @@
+///* GLOBAL *///
+
 canvas {
 	position : fixed;
 	top : 0;
 	left : 0;
 }
 
+body { 
+	/*background-color : #0E0B16;*/
+	background-image : url("http://cdn.mysitemyway.com/etc-mysitemyway/webtreats/assets/posts/976/full/tileable-light-blurs-and-abstract-circles-18.png");
+	background-color : transparent;
+	background-attachment : local;
+	
+	margin : 2em;	
+}
+h1 { color : #A239CA; }
+h2 { color : #4717F6; }
+h3 { color : #4717F6; }
+h4 { color : #E7DFDD; padding : 1em; }
+p { color : #E7DFDD; padding : 1em; }
+
+section {
+	background-color : #060015;
+	background-attachment: fixed; /*look more into*/
+	margin : 2em;
+	margin-right : 4em;
+	transition-property : transform;
+	transition-duration : 0.5s;
+}
+
+section:hover {
+	transform : scale(1.1);
+}
+
 img {
+	padding : 1em; 
 	transition-property : transform;
 	transition-duration : 0.5s;
 }
@@ -13,6 +43,8 @@ img:hover {
 	transform : scale(1.25);
 }
 
+///* OVERLAY *///
+
 div.overlay {
 	height : 0px;
 	overflow : visible;
@@ -20,23 +52,16 @@ div.overlay {
 	background-color : #000000;
 }
 
-div.header {
-	margin-left : auto;
-	margin-right : auto;
-	width : 40em;
-	background-color : transparent;
-	text-decoration : none;
-}
+///* HEADER *///
 
-
-h1.header {
+article.header h1 {
 	font-size : 400%;
 	text-shadow : -2px 0px 0px #E7DFDD;
 	margin-left : 0em;
 	margin-right : 0em;
 }
 
-h2.header {
+article.header h2 {
 	font-size : 200%;
 	text-shadow : -1px 0px 0px #A239CA, 0px -1px 0px #A239CA, 
 				   1px 0px 0px #A239CA, 0px 1px 0px #A239CA, 
@@ -46,21 +71,34 @@ h2.header {
 				   1px 1px 5px #000000;
 }
 
-img.header {
+article.header img {
 	padding : 0em;
 }
 
-ul.header {
-	list-style-type : none;
+article.header div {
+	margin-left : auto;
+	margin-right : auto;
+	width : 40em;
+	background-color : transparent;
+	text-decoration : none;
 }
 
-.header a {
+article.header nav {
+	margin-bottom : 0em;
+	padding-bottom : 4em;
+}
+
+article.header a {
 	text-decoration : none;
 	transition-property : color;
 	transition-duration : 0.2s;
 }
 
-li.header {
+article.header ul {
+	list-style-type : none;
+}
+
+article.header li {
 	float : left;
 	padding-right : 3em;
 	padding-left : 3em;
@@ -82,68 +120,35 @@ li#selected {
 	font-size : 125%;
 	text-shadow : 1px 0px 0px #000000/*, -1px 0px 0px #000000*/;
 	background-color : #A239CA;
-	transition : ;
+	transition : background-color 0.2s, padding-right 0.2s, padding-left 0.2s, font-size 0.2s, text-shadow 0.2s ;
 }
 
-li.header:hover, li.header:focus, li.header:active {
+article.header li:hover, article.header li:focus, article.header li:active {
 	background-color : #A239CA;
 	padding-right : 2.75em;
 	padding-left : 2.75em;
 	font-size : 125%;
 	text-shadow : 1px 0px 0px #000000;
 }
-.header a:hover, .header a:focus, .header a:active {
+article.header a:hover, article.header a:focus, article.header a:active {
 	color : #E7DFDD;
 }
 
-nav.header {
-	margin-bottom : 0em;
-	padding-bottom : 4em;
-}
+///* FOOT *///
 
-body { 
-	/*background-color : #0E0B16;*/
-	background-image : url("http://cdn.mysitemyway.com/etc-mysitemyway/webtreats/assets/posts/976/full/tileable-light-blurs-and-abstract-circles-18.png");
-	background-color : transparent;
-	background-attachment : local;
-	
-	margin : 2em;	
-}
-h1 { color : #A239CA; }
-h2 { color : #4717F6; }
-h3 { color : #4717F6; }
-h4 { color : #E7DFDD; padding : 1em; }
-p { color : #E7DFDD; padding : 1em; }
-img { padding : 1em; }
-
-section {
-	background-color : #060015;
-	background-attachment: fixed; /*look more into*/
-	margin : 2em;
-	margin-right : 4em;
-	transition-property : transform;
-	transition-duration : 0.5s;
-}
-
-section:hover {
-	transform : scale(1.1);
-}
-
-p.about_me {
-	padding : 1em;
-}
-
-h2.foot {
-	color : #bc2cda;
+article.foot h2 {
+	color : #000000;/*#bc2cda;*/
 	text-align : center;
 	text-shadow : 5px 5px 10px #060015;
 }
-h3.foot {
+
+article.foot h3 {
 	color : #f0e8e6;
 	text-align : center;
 	text-shadow : 2px 2px 5px #060015;
 }
-hgroup.foot {
+
+article.foot hgroup {
 	line-height : 50%;
 	background-color : #25134f;
 	margin : 2em;
@@ -151,12 +156,42 @@ hgroup.foot {
 	border-top : thick double #000000;
 }
 
+///* PROJECTS *///
+
 h3.projects {
 	color : #E7DFDD;
 	padding-top : 1.5em;
 	padding-left : 1.5em;
 	padding-right : 1.5em;
 }
+
+section.project h4 {
+	color : #E7DFDD;
+	font-size : 150%;
+	margin : 0;
+	padding : 0;
+}
+
+section.project h5 {
+	color : #E7DFDD;
+}
+
+section.project div {
+	text-align : left;
+	line-height : 10%;
+	padding : 1em;
+	padding-top : 2em;
+	-webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition: 0.2s;
+}
+
+section.project:hover div {
+	text-align : center;
+}
+
+///* LINK *///
 
 h5.link {
 	font-size : 125%;
@@ -167,10 +202,6 @@ footer.link {
 	margin : 1em;
 	transition : font-size 0.1s;
 }
-/*
-footer:hover {
-	font-size : 150%;
-}*/
 
 h5.link:hover {
 	text-shadow : 0px 1px 0px #E7DFDD, 0px -1px 0px #E7DFDD, 1px 0px 0px #E7DFDD, -1px 0px 0px #E7DFDD, -1px -1px 5px #000000;
