@@ -1,4 +1,8 @@
-///* GLOBAL *///
+/* == IMPORTS == */
+
+@import url('https://fonts.googleapis.com/css?family=Lato:400,400i,900,900i');
+
+/* == GLOBAL == */
 
 canvas {
 	position : fixed;
@@ -13,12 +17,18 @@ body {
 	background-attachment : local;
 	
 	margin : 2em;	
+	
+	font-family : "Lato", sans-serif;
 }
 h1 { color : #A239CA; }
 h2 { color : #4717F6; }
 h3 { color : #4717F6; }
 h4 { color : #E7DFDD; padding : 1em; }
-p { color : #E7DFDD; padding : 1em; }
+p { 
+	color : #E7DFDD; 
+	padding : 1em;
+	font-family : "Lato", sans-serif;
+}
 
 section {
 	background-color : #060015;
@@ -43,7 +53,7 @@ img:hover {
 	transform : scale(1.25);
 }
 
-///* OVERLAY *///
+/* == OVERLAY == */
 
 div.overlay {
 	height : 0px;
@@ -52,10 +62,10 @@ div.overlay {
 	background-color : #000000;
 }
 
-///* HEADER *///
+/* == HEADER == */
 
 article.header h1 {
-	font-size : 400%;
+	font-size : 400% !important;
 	text-shadow : -2px 0px 0px #E7DFDD;
 	margin-left : 0em;
 	margin-right : 0em;
@@ -134,10 +144,10 @@ article.header a:hover, article.header a:focus, article.header a:active {
 	color : #E7DFDD;
 }
 
-///* FOOT *///
+/* == FOOT == */
 
 article.foot h2 {
-	color : #000000;/*#bc2cda;*/
+	color : #bc2cda;
 	text-align : center;
 	text-shadow : 5px 5px 10px #060015;
 }
@@ -156,7 +166,11 @@ article.foot hgroup {
 	border-top : thick double #000000;
 }
 
-///* PROJECTS *///
+/* == PROJECTS == */
+
+section.project.page {
+	padding-bottom : 20em;
+}
 
 h3.projects {
 	color : #E7DFDD;
@@ -165,33 +179,46 @@ h3.projects {
 	padding-right : 1.5em;
 }
 
+div.img_container {
+	text-align : left;
+	line-height : 100%;
+	padding : 0em;
+	
+	float: left;
+}
+
 section.project h4 {
+	/*position : relative;*/
+	transform : translateX(-40%);
 	color : #E7DFDD;
 	font-size : 150%;
 	margin : 0;
 	padding : 0;
+	transition : all 0.75s;
 }
 
 section.project h5 {
+	transform : translateX(-32.5%);
 	color : #E7DFDD;
+	transition : all 0.75s;
 }
 
 section.project div {
-	text-align : left;
+	text-align : center;
+	
 	line-height : 10%;
 	padding : 1em;
 	padding-top : 2em;
-	-webkit-transition: 0.2s;
-    -moz-transition: 0.2s;
-    -o-transition: 0.2s;
-    transition: 0.2s;
+	transition : inherit;
+	
+	
 }
 
-section.project:hover div {
-	text-align : center;
+section.project:hover h4, section.project:hover h5 {
+	transform : translateX(0%);
 }
 
-///* LINK *///
+/* == LINK == */
 
 h5.link {
 	font-size : 125%;
